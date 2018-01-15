@@ -27,7 +27,11 @@ trader_du_dimanche([6,17,4,22,8,44])
 
 #LVL UP
 
-def trader_du_lundi(:action)
+def trader_du_lundi(j_semaine)
+
+max = 0
+
+for j_semaine.each_key do
 
 
 
@@ -41,6 +45,10 @@ j4 = { :GOO => 17, :MMM => 3, :ADBE => 6, :EA=> 9, :BA => 15, :KO => 6, :XOM => 
 j5 = { :GOO => 8, :MMM => 18, :ADBE => 4, :EA=> 6, :BA => 15, :KO => 18, :XOM => 3, :GPS => 12, :MCD => 19, :DIS => 3, :CRM => 7, :JNJ => 9 }
 j6 = { :GOO => 10, :MMM => 12, :ADBE => 8, :EA=> 3, :BA => 18, :KO => 20, :XOM => 5, :GPS => 11, :MCD => 3, :DIS => 9, :CRM => 8, :JNJ => 15 }
 j7 = { :GOO => 17, :MMM => 14, :ADBE => 2, :EA=> 17, :BA => 7, :KO => 13, :XOM => 1, :GPS => 15, :MCD => 15, :DIS => 10, :CRM => 9, :JNJ => 17 }
+
+j_semaine = Array[{j1}, {j2}, {j3}, {j4}, {j5}, {j6}, {j7}]
+
+
 
 
 
